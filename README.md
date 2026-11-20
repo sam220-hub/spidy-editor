@@ -13,6 +13,8 @@ in OpenCode, Claude Code, or any agent that reads <code>SKILL.md</code>.</p>
 
 </div>
 
+<img src="docs/media/pipeline.svg" width="100%" alt="Animated pipeline diagram: 1 best takes, 2 you approve, 3 render.">
+
 ## What it does
 
 Hand it one raw phone recording and it returns a finished 1080x1920 reel: the best take of every
@@ -142,9 +144,10 @@ tests/              the checks the pipeline itself runs
 
 Spidy Editor is a renamed, Windows-hardened edition of
 [ghost-editor](https://github.com/kurbaitaev/ghost-editor) by **kurbaitaev**, used and redistributed
-under the MIT licence. The original copyright notice is kept in [LICENSE](LICENSE), and the editors,
-recipes, styles and documentation are his work. The Windows port (native scripts, launcher, PATH and
-encoding handling, docs) and the Spidy Editor packaging are the changes on top.
+under the MIT licence. The original copyright notice is kept in [LICENSE](LICENSE), the exact scope of
+what changed is listed in [NOTICE](NOTICE), and the editors, recipes, styles and documentation are his
+work. The Windows port (native scripts, launcher, PATH and encoding handling, docs) and the Spidy
+Editor packaging are the changes on top.
 
 Demo reels, screenshots and the author's own footage belong to the original project — see it there
 rather than here.

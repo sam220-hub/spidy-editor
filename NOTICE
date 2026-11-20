@@ -1,0 +1,37 @@
+Spidy Editor
+============
+
+Spidy Editor is a renamed, Windows-hardened edition of ghost-editor by kurbaitaev
+(https://github.com/kurbaitaev/ghost-editor), used and redistributed under the MIT
+licence. The original copyright notice is reproduced in LICENSE and applies to the
+whole work:
+
+    Copyright (c) 2026 kurbaitaev
+
+Original work
+-------------
+The editor, its steps and scripts, the recipes/ styles, templates, styles library,
+documentation and the creative direction come from ghost-editor.
+
+Changes in this edition
+-----------------------
+- Windows port: the pipeline runs natively (no Git Bash, no WSL). Every step that was
+  a shell script now has a Python implementation; the .sh files remain thin wrappers
+  for macOS and Linux.
+- Launcher: `spidy` / `spidy.cmd` find a real Python (skipping the Microsoft Store
+  alias) and refresh PATH from the registry, so node, npx and ffmpeg are visible in
+  sessions that started before those tools were installed.
+- Rendering: HyperFrames is invoked through node's npx entry point (cmd.exe splits
+  arguments containing spaces), and renders use the browser and ffmpeg already on the
+  machine instead of downloading a managed Chrome.
+- Encoding: UTF-8 is forced for every text read/write and for child processes.
+- Rebranding: the skill is published as Spidy Editor (skill ID `spidy-editor`), with
+  `ghost` kept as an alias; README, INSTALL and WINDOWS docs rewritten for the new
+  name and for Windows-first installation.
+- Personal demo media from the original project (recorded footage, style grids) is
+  not redistributed here. The media library (SFX, music, emoji, LUTs, models) is
+  downloaded at install time; manifests ship in this repository.
+
+Licence
+-------
+MIT. See LICENSE. Reels you make with it are yours.
