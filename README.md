@@ -27,7 +27,7 @@ creative decisions stay with you (and the agent).
 | --- | --- | --- |
 | prep | phone clip → 1080x1920 / 30 fps, voice at -16 LUFS | `spidy prep IN.MOV $P` |
 | transcription | word-level timestamps (Whisper) | `spidy transcribe $P/assets/talk.mp4 --out $P/build/words.whisper.json` |
-| takes | picks the best take of each line, drops pauses | `spidy takes ...` / `spidy autocut ...` |
+| takes | picks the best take of each line, drops pauses | `spidy takes --script script.txt --words $P/build/islands.json --out $P/build/takes.json` |
 | build | reel spec → `index.html`, caption groups, SFX table, warnings | `spidy build $P` |
 | approve | a page with a frame at every cut | `spidy approval_sheet $P --open` |
 | render | pinned HyperFrames renderer, Edge/Chrome on your PC | `spidy hf render -o build/reel.mp4` |
