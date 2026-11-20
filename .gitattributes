@@ -1,0 +1,19 @@
+# text files are stored with LF; Windows batch files check out with CRLF
+* text=auto
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.svg text eol=lf
+*.gif binary
+*.mp4 binary
+*.webm binary
+*.wav binary
+*.mp3 binary
+*.png binary
+*.jpg binary
+*.ttf binary
+*.woff2 binary
+*.cube binary

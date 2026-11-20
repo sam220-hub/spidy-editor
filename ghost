@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# ghost - the old name of the skill's command; kept so existing notes keep working.
+exec "$(cd "$(dirname "$0")" && pwd)/spidy" "$@"
